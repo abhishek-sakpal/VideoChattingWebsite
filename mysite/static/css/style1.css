@@ -1,0 +1,43 @@
+body{
+	font-size: 105%;
+	background-color: rgb(32,32,32);
+	color: orangered;
+}
+.video-grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: black;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 60% 20%;
+}
+
+#username,#msg{
+	padding: 5px;
+}
+
+video{
+	margin: 10px;
+	border: 20px white;
+	border-radius: 25%;
+    background-color:aqua;
+}
+
+#chat{
+	margin-top: 400px;
+	margin-left: 300px;
+}
+
+button{
+	margin: 10px;
+	padding: 10px;
+	color: orangered;
+	border-width: 5px;
+	border-color: white;
+	background-color: black;
+	border-radius: 40%;
+}
+button:hover{
+	font-size: 95%;
+}
