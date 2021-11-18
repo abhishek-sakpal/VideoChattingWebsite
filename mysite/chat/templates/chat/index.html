@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django video chat</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <form class="login">
+        <div class="row">
+        <label id="label-username">Username</label>
+            <label>
+                <input id="username">
+                <button id="btn-join">Join</button>
+            </label>
+        </div>
+    </form>
+    <div class="main-container">
+        <div id="video-container">
+            <div><video id="local-video" style="float: left" autoplay playsinline></video></div>
+            <div><button id="btn-audio">Audio Mute</button>
+            <button id="btn-video">Video Off</button></div>
+        </div>
+
+    <div id="chat">
+        <h2>Chat</h2>
+        <div id="messages">
+            <ul id="message-list"></ul>
+        </div>
+
+        <div><input id="msg"><button id="btn-send-msg">Send</button> </div>
+    </div>
+    </div>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
